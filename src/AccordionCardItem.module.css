@@ -1,0 +1,17 @@
+.question {
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #4b4c5f;
+  margin-top: 17px;
+}
+.answer {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #787887;
+  margin-top: 12px;
+}
