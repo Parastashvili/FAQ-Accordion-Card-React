@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./AccordionCard.css";
 import AccordionCardItem from "../AccordionCardItem";
+import desktopLogo from "../images/illustration-woman-online-desktop.svg";
+import desktopPattern from "../images/bg-pattern-desktop.svg";
 
 function AccordionCard() {
   const [activeAccordionNumber, setActiveAccordionNumber] = useState(null);
@@ -55,16 +57,22 @@ function AccordionCard() {
   };
   return (
     <div className="cardContainer">
-      <h1 className="heading">FAQ</h1>
-      {items.map((item) => (
-        <AccordionCardItem
-          activeAccordionNumber={activeAccordionNumber}
-          handleClick={handleClick}
-          itemNumber={item.itemNumber}
-          question={item.question}
-          answer={item.answer}
-        />
-      ))}
+      <div>
+        <img className="desktopPatter" src={desktopPattern} alt="logo" />
+        <img className="desktopLogo" src={desktopLogo} alt="logo" />
+      </div>
+      <div>
+        <h1 className="heading">FAQ</h1>
+        {items.map((item) => (
+          <AccordionCardItem
+            activeAccordionNumber={activeAccordionNumber}
+            handleClick={handleClick}
+            itemNumber={item.itemNumber}
+            question={item.question}
+            answer={item.answer}
+          />
+        ))}
+      </div>
     </div>
   );
 }

@@ -21,3 +21,19 @@
 .rotated {
   transform: rotate(180deg);
 }
+@media (min-width: 1440px) {
+  .cardContainer {
+    padding: 95px;
+    width: 730px;
+  }
+  .heading {
+    text-align: start;
+    margin-top: 0px;
+  }
+  .cardContainer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+}

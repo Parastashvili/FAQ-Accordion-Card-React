@@ -16,9 +16,43 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.logoPattern{
+.logoPattern {
   position: relative;
   width: 240px;
   top: 90%;
   transform: translate(-50%, -50%);
+}
+.desktopPatter,
+.desktopLogo,
+.desktopBox {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .App {
+    flex-direction: row;
+  }
+  .logo,
+  .logoPattern {
+    display: none;
+  }
+  .desktopPatter,
+  .desktopLogo {
+    display: block;
+    position: absolute;
+    width: 472px;
+    right: 540px;
+    top: 60px;
+  }
+  .desktopPatter {
+    right: 500;
+    width: auto;
+    top: -300px;
+  }
+  .desktopBox {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: -95px;
+    top: 200px;
+  }
 }

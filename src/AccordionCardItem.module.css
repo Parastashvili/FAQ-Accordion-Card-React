@@ -9,6 +9,9 @@
   border-bottom: 1px solid #e8e8ea;
   padding-bottom: 15px;
 }
+.question:hover {
+  color: #f47b56;
+}
 .answer {
   font-family: "Kumbh Sans";
   font-style: normal;
@@ -22,4 +25,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1440px) {
+  .questionFlex {
+    width: 350px;
+  }
+  .answer {
+    width: 350px;
+  }
 }
