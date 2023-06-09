@@ -1,8 +1,24 @@
-.App{
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.App {
+  font-family: "Kumbh Sans", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+}
+.logo {
+  position: relative;
+  width: 237px;
+  height: 180px;
+  top: 91%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logoPattern{
+  position: relative;
+  width: 240px;
+  top: 90%;
+  transform: translate(-50%, -50%);
 }

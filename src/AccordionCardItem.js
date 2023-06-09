@@ -10,8 +10,10 @@ export default function AccordionCardItem(props) {
       }}
       className={styles.question}
     >
-      {question}
-      <img src={arrow} alt="indicator" />
+      <div className={styles.questionFlex} id={itemNumber}>
+        {question}
+        <img src={arrow} alt="indicator" id={itemNumber+"arrow"} />
+      </div>
       {activeAccordionNumber === itemNumber ? (
         <p className={styles.answer}>{answer}</p>
       ) : null}

@@ -2,8 +2,8 @@
   background: #ffffff;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
   border-radius: 23px;
-  width: 325px;
   padding: 48px 24px;
+  width: 279px;
 }
 .heading {
   font-family: "Kumbh Sans";
@@ -13,4 +13,11 @@
   color: #1e1f36;
   text-align: center;
   margin-bottom: 38px;
+  margin-top: 80px;
+}
+.expanded {
+  font-weight: 700;
+}
+.rotated {
+  transform: rotate(180deg);
 }

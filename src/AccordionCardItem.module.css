@@ -5,6 +5,9 @@
   line-height: 16px;
   color: #4b4c5f;
   margin-top: 17px;
+  cursor: pointer;
+  border-bottom: 1px solid #e8e8ea;
+  padding-bottom: 15px;
 }
 .answer {
   font-family: "Kumbh Sans";
@@ -14,4 +17,9 @@
   line-height: 18px;
   color: #787887;
   margin-top: 12px;
+}
+.questionFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
